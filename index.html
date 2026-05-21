@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quick Talent</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+      Quick Talent
+    </div>
+
+    <nav>
+
+      <a href="#">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#antes">Antes e Depois</a>
+      <a href="#feedbacks">Feedbacks</a>
+      <a href="#orcamento">Orçamento</a>
+      <a href="#contato">Contato</a>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <img src="./logo.png" alt="Quick Talent">
+
+      <h1>
+
+        Envelopamentos e Estofados
+        <span class="verde">
+          Sempre Renovados!
+        </span>
+
+      </h1>
+
+      <p>
+
+        Higienização profunda e envelopamento premium com acabamento profissional,
+        proteção e transformação completa.
+
+      </p>
+
+      <a href="#orcamento" class="btn">
+        Solicitar Orçamento
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- SERVIÇOS -->
+
+  <section id="servicos">
+
+    <h2 class="titulo">
+      Nossos Serviços
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Envelopamento</h3>
+
+        <p>
+          Renovamos o visual de estofados com acabamento moderno e resistente.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Higienização</h3>
+
+        <p>
+          Eliminamos ácaros, bactérias, manchas e odores dos seus estofados.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Proteção Premium</h3>
+
+        <p>
+          Mais durabilidade, beleza e proteção para seus móveis.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Resultado Impecável</h3>
+
+        <p>
+          Atendimento rápido, eficiente e com qualidade garantida.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALERIA -->
+
+  <section id="antes">
+
+    <h2 class="titulo">
+      Antes e Depois
+    </h2>
+
+    <div class="galeria">
+
+      <div class="foto">
+        <img src="./envelopamento1.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./envelopamento2.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./envelopamento3.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./envelopamento4.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./higienizacao1.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./higienizacao2.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./higienizacao3.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./higienizacao4.jpeg">
+      </div>
+
+      <div class="foto">
+        <img src="./higienizacao5.jpeg">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEEDBACKS -->
+
+  <section id="feedbacks">
+
+    <h2 class="titulo">
+      Avaliações dos Clientes
+    </h2>
+
+    <div class="feedback-container">
+
+      <!-- FORMULÁRIO -->
+
+      <div class="feedback-form">
+
+        <input
+          type="text"
+          id="nomeFeedback"
+          placeholder="Seu nome"
+        >
+
+        <textarea
+          id="mensagemFeedback"
+          placeholder="Escreva sua avaliação"
+        ></textarea>
+
+        <button
+  type="button"
+  class="botao-comentario"
+  onclick="adicionarComentario()">
+
+  Publicar Comentário
+
+</button>
+
+      </div>
+
+      <!-- FEEDBACKS -->
+
+      <div class="feedbacks" id="listaFeedbacks">
+
+        <div class="feedback">
+
+          <p>
+            “Serviço impecável e atendimento excelente.”
+          </p>
+
+          <h4>
+            — Cliente Quick Talent
+          </h4>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ORÇAMENTO -->
+
+  <section id="orcamento">
+
+    <h2 class="titulo">
+      Solicite Seu Orçamento
+    </h2>
+
+    <form
+      action="https://formsubmit.co/rapha.carati@gmail.com"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="input-group">
+
+        <input
+          type="text"
+          name="nome"
+          placeholder="Nome completo"
+          required
+        >
+
+      </div>
+
+      <div class="input-group">
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Seu e-mail"
+          required
+        >
+
+      </div>
+
+      <div class="input-group">
+
+        <input
+          type="tel"
+          name="telefone"
+          placeholder="Telefone / WhatsApp"
+          required
+        >
+
+      </div>
+
+      <div class="input-group">
+
+        <select name="servico" required>
+
+          <option value="">
+            Serviço de interesse
+          </option>
+
+          <option>
+            Higienização de Estofados
+          </option>
+
+          <option>
+            Envelopamento
+          </option>
+
+          <option>
+            Ambos
+          </option>
+
+        </select>
+
+      </div>
+
+      <div class="input-group">
+
+        <textarea
+          name="mensagem"
+          placeholder="Descreva o serviço desejado"
+        ></textarea>
+
+      </div>
+
+      <div class="input-group">
+
+        <input
+          type="file"
+          name="arquivo"
+        >
+
+      </div>
+
+      <button type="submit" class="botao">
+        Enviar Orçamento
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer id="contato">
+
+    <h2>
+      Entre em Contato
+    </h2>
+
+    <p>
+      📞 +55 11 94779-5071
+    </p>
+
+    <p>
+      📧 rapha.carati@gmail.com
+    </p>
+
+    <p>
+      📸 @raphamaster
+    </p>
+
+    <p>
+      📸 @quick.talent.env
+    </p>
+
+    <p>
+      📸 @quick.talent
+    </p>
+
+    <p style="margin-top:25px;">
+      © 2025 Quick Talent - Todos os direitos reservados.
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
