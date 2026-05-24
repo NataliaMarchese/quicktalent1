@@ -50,7 +50,8 @@ header{
 
   color:#7CFC00;
 
-  font-size:40px;
+  font-size:clamp(26px, 5vw, 40px);
+
   font-weight:800;
 
   text-shadow:0 0 15px #7CFC00;
@@ -58,10 +59,10 @@ header{
 }
 
 nav{
-
   display:flex;
   gap:25px;
-
+  flex-wrap:wrap;
+  justify-content:center;
 }
 
 nav a{
@@ -236,7 +237,7 @@ section{
   display:grid;
 
   grid-template-columns:
-  repeat(auto-fit,minmax(400px,1fr));
+  repeat(auto-fit,minmax(250px,1fr));
 
   gap:25px;
 
@@ -500,25 +501,60 @@ footer p{
 }
 
 @media(max-width:768px){
-
-  .hero h1{
-    font-size:45px;
-  }
-
-  .hero-content img{
-    width:280px;
-  }
-
-  header{
+.logo{
+  text-align:center;
+}
+   header{
     flex-direction:column;
+    padding:20px;
+  }
+
+  .logo{
+    font-size:28px;
+    text-align:center;
   }
 
   nav{
     margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
   }
 
   nav a{
-    margin:0 8px;
+    font-size:14px;
+  }
+
+  .hero{
+    padding:180px 20px 100px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .hero-content img{
+    width:220px;
+  }
+
+  .titulo{
+    font-size:32px;
+  }
+
+  .galeria{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:70px 20px;
+  }
+
+  form{
+    padding:25px;
   }
 
 }
