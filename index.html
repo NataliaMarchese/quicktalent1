@@ -8,9 +8,17 @@
 
   <title>Quick Talent</title>
 
+  <meta
+    name="description"
+    content="Especialistas em envelopamento e higienização de estofados com acabamento profissional."
+  >
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css">
 
@@ -45,7 +53,10 @@
 
     <div class="hero-content">
 
-      <img src="./logo.png" alt="Quick Talent">
+      <img
+        src="./logo.png"
+        alt="Logo Quick Talent"
+      >
 
       <h1>
 
@@ -136,39 +147,66 @@
     <div class="galeria">
 
       <div class="foto">
-        <img src="./envelopamento1.jpeg">
+        <img
+          src="./envelopamento1.jpeg"
+          alt="Envelopamento 1"
+        >
       </div>
 
       <div class="foto">
-        <img src="./envelopamento2.jpeg">
+        <img
+          src="./envelopamento2.jpeg"
+          alt="Envelopamento 2"
+        >
       </div>
 
       <div class="foto">
-        <img src="./envelopamento3.jpeg">
+        <img
+          src="./envelopamento3.jpeg"
+          alt="Envelopamento 3"
+        >
       </div>
 
       <div class="foto">
-        <img src="./envelopamento4.jpeg">
+        <img
+          src="./envelopamento4.jpeg"
+          alt="Envelopamento 4"
+        >
       </div>
 
       <div class="foto">
-        <img src="./higienizacao1.jpeg">
+        <img
+          src="./higienizacao1.jpeg"
+          alt="Higienização 1"
+        >
       </div>
 
       <div class="foto">
-        <img src="./higienizacao2.jpeg">
+        <img
+          src="./higienizacao2.jpeg"
+          alt="Higienização 2"
+        >
       </div>
 
       <div class="foto">
-        <img src="./higienizacao3.jpeg">
+        <img
+          src="./higienizacao3.jpeg"
+          alt="Higienização 3"
+        >
       </div>
 
       <div class="foto">
-        <img src="./higienizacao4.jpeg">
+        <img
+          src="./higienizacao4.jpeg"
+          alt="Higienização 4"
+        >
       </div>
 
       <div class="foto">
-        <img src="./higienizacao5.jpeg">
+        <img
+          src="./higienizacao5.jpeg"
+          alt="Higienização 5"
+        >
       </div>
 
     </div>
@@ -201,13 +239,12 @@
         ></textarea>
 
         <button
-  type="button"
-  class="botao-comentario"
-  onclick="adicionarFeedback()">
-
-  Publicar Comentário
-
-</button>
+          type="button"
+          class="botao-comentario"
+          onclick="adicionarFeedback()"
+        >
+          Publicar Comentário
+        </button>
 
       </div>
 
@@ -241,17 +278,16 @@
       Solicite Seu Orçamento
     </h2>
 
-  <form
-  action="https://formspree.io/f/xojbnwpr"
-  method="POST"
->
-    <input
-  type="hidden"
-  name="_subject"
-  value="Novo orçamento Quick Talent"
->
+    <form
+      action="https://formspree.io/f/xojbnwpr"
+      method="POST"
+    >
 
-      <input type="hidden" name="_captcha" value="false">
+      <input
+        type="hidden"
+        name="_subject"
+        value="Novo orçamento Quick Talent"
+      >
 
       <div class="input-group">
 
@@ -288,21 +324,24 @@
 
       <div class="input-group">
 
-        <select name="servico" required>
+        <select
+          name="servico"
+          required
+        >
 
           <option value="">
             Serviço de interesse
           </option>
 
-          <option>
+          <option value="Higienização de Estofados">
             Higienização de Estofados
           </option>
 
-          <option>
+          <option value="Envelopamento">
             Envelopamento
           </option>
 
-          <option>
+          <option value="Ambos">
             Ambos
           </option>
 
@@ -315,20 +354,15 @@
         <textarea
           name="mensagem"
           placeholder="Descreva o serviço desejado"
+          required
         ></textarea>
 
       </div>
 
-      <div class="input-group">
-
-        <input
-          type="file"
-          name="arquivo"
-        >
-
-      </div>
-
-      <button type="submit" class="botao">
+      <button
+        type="submit"
+        class="botao"
+      >
         Enviar Orçamento
       </button>
 
@@ -373,4 +407,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
